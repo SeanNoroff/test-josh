@@ -9,8 +9,8 @@ const connection = {
   password: process.env.ADMIN_PASSWORD,
   port: process.env.DB_PORT,
   host: process.env.HOST,
-  dialect: process.env.DIALECT,
-  dialectmodel: process.env.DIALECTMODEL,
+  dialect: "mysql",
+  dialectmodel: "mysql2",
 };
 const sequelize = new Sequelize(connection);
 const db = {}
