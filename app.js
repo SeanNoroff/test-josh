@@ -33,7 +33,7 @@ app.use(session({
   secret: 'random text',
   resave: false,
   saveUninitialized: false,
-  store: new SQLiteStore()
+  store: new SQLiteStore({dir:'./tmp/'})
 }));
 app.use(passport.authenticate('session'));
 
